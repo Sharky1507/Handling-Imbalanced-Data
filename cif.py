@@ -45,7 +45,7 @@ def train():
     )
     train_iterator = generator.flow(train_x, train_y, batch_size=BATCH_SIZE)
 
-    # fit model - write your code below
+    # fit model 
 
     steps = int(train_x.shape[0]/BATCH_SIZE)
     history = model.fit_generator(
